@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-image: url('../img/anhnen.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: whitesmoke;
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    padding-top: 90px;
+}
+
+header p {
+    padding-top: 40px;
+}
+
+.menu {
+    background: linear-gradient(to right, #687fca, #3cd3ad);
+    height: 50px;
+    width: 100%;
+    color: rgb(8, 82, 35);
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.menu ul li {
+    display: inline-block;
+    padding: 5px 16px;
+    box-shadow: 6px;
+    cursor: pointer;
+}
+
+.menu ul li a {
+    text-decoration: none;
+}
+
+.menu ul li:hover {
+    background: rgb(250, 248, 248);
+    border-radius: 20px;
+    color: rgb(100, 67, 4);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border: 1.5px solid rgb(193, 143, 50);
+}
+
+body {
+    font-size: 20px;
+}
+
+/*Thêm responsitive để tối ưu trên điện thoại */
+/* Trên điện thoại, 3 cột sẽ xếp dọc, dễ đọc và dễ cuộn */
+.box-container {
+    display: flex;
+    /* Để các cột hiển thị nằm ngang */
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    /* Cho phép các cột xuống dòng khi không đủ không gian OPTIMIZE */
+}
+
+.right-column {
+    flex: 1;
+    /*Cột phải chiếm 1 phần tổng không gian */
+    padding: 50px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    min-width: 300px;
+    /* Đảm bảo mỗi cột có độ rộng tối thiểu OPTIMIZE */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    /* Thêm bóng đổ nhẹ cho các cột OPTIMIZE */
+    box-sizing: border-box;
+    /* Đảm bảo padding không làm tăng kích thước cột OPTIMIZE */
+}
+
+/* Note: Tổng là 1 + 2 + 1 = 4 phần, nên cột giữa chiếm 50%, hai cột còn lại mỗi cột chiếm 25%.*/
+
+.center-column {
+    flex: 2;
+    /* Cột giữa sẽ chiếm gấp đôi so với cột hai bên */
+    background-image: url('../img/image2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    border-radius: 8px;
+    width: 300px;
+    padding-left: 25px;
+}
+
+.tag-b,
+h3 {
+    color: rgb(225, 71, 71);
+}
+
+h2 {
+    color: #df6915;
+}
+
+h1 {
+    color: wheat;
+}
+
+img {
+    width: 100%;
+    height: 500px;
+}
+
+.paragraph {
+    background-color: rgb(238, 246, 224);
+    border-left: 4px solid green;
+    padding: 5px;
+}
+
+table tbody tr td {
+    padding: 10px;
+
+}
+
+
+
+
+/* ...CSS FOR LEFT-COLUMN... */
+
+.left-column {
+    height: 270px;
+    flex: 1;
+    /*Cột trái chiếm 1 phần tổng không gian */
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    min-width: 300px;
+    /* Đảm bảo mỗi cột có độ rộng tối thiểu OPTIMIZE */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    /* Thêm bóng đổ nhẹ cho các cột OPTIMIZE */
+    box-sizing: border-box;
+    /* Đảm bảo padding không làm tăng kích thước cột OPTIMIZE */
+}
+
+.left-column {
+    background: #f5f5f5;
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 30px;
+    min-width: 300px;
+    box-shadow: 0 2px 8px #e0e7ef;
+}
+
+.toc-header {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.toc-icon {
+    margin-right: 8px;
+}
+
+.toc-title {
+    font-size: 1.3rem;
+    margin-right: 8px;
+}
+
+.toc-arrow {
+    margin-left: auto;
+    font-size: 1.2rem;
+    color: #888;
+}
+
+.toc-list {
+    list-style: decimal inside;
+    margin: 0;
+    padding: 0;
+    font-size: 1.1rem;
+}
+
+.toc-list li {
+    margin-bottom: 6px;
+    color: #222;
+    padding-left: 5px;
+    transition: color 0.2s;
+}
+
+.toc-list li.active {
+    color: #22a06b;
+    font-weight: bold;
+}
+
+.toc-list li:hover {
+    color: #b9ce1a;
+    cursor: pointer;
+}
+
+
+/* FOOTER STYLES */
+footer {
+    padding: 30px 0;
+    background-color: #0a2540;
+    margin-top: 50px;
+    padding-left: 50px;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: center;
+}
+
+.footer-section {
+    min-width: 250px;
+    flex: 1;
+}
+
+.footer-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-links li {
+    margin: 0 0 10px 0;
+}
+
+.footer-copyright {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #374151;
+    color: #d1b5bd;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ---CSS FOR RIGHT COLUMN--- */
+
+.thithu {
+    width: 150px;
+    height: 50px;
+    margin: 5px 100px;
+    background: linear-gradient(to right, #00aaff, #00bbff);
+    color: white;
+    font-weight: bold;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.1s ease;
+    margin-top: 2px;
+    margin-left:  80px;;
+}
+
+/* Khi rê chuột vào */
+.thithu:hover {
+    background: linear-gradient(to right, #007acc, #9a9b3e);
+    color: white;
+}
+
+/* Khi nhấn giữ chuột */
+.thithu:active {
+    background: linear-gradient(to right, #ffcc00, #ffdd33);
+    transform: scale(0.98);
+    /* hiệu ứng nhấn xuống nhẹ */
+}
+
+img {
+    width: 310px;
+    height: 200px;
+    border-radius: 5px;
+    margin: 4px 20px;
+}
+
+.free {
+    width: 250px;
+    height: 260px;
+    display: inline-block;
+    margin: 2px 45px;
+    padding: 20px;
+    border: rgb(83, 85, 87);
+    border-radius: 2px;
+    background-color: rgb(241, 221, 235);
+    color: rgba(137, 20, 100, 0.892);
+}
+
+a {
+    color: rgb(191, 32, 32);
+    text-decoration: none;
+}
+
+
+.a2-info {
+    width: 80px;
+    height: 100px;
+    display: inline-block;
+    margin: 2px 45px;
+    padding: 20px;
+    border: rgb(83, 85, 87);
+    border-radius: 5px;
+    background-color: rgb(241, 221, 235);
+}
