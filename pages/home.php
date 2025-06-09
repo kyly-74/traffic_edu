@@ -2,6 +2,7 @@
                         session_start();
                         ?>
                         <!DOCTYPE html>
+
                         <head>
                             <meta charset="UTF-8">
                             <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -100,7 +101,7 @@
                                     </div>
                                 </div>
                                 <div class="right-column">
-                                    <div class="thithu"><a href="thi-bang-lai-xe-a1-online.php">Thi thử</a> </div><br>
+                                    <div class="thithu"><a href="thi-bang-lai-xe-a1-online.php" style="text-decoration: none; color: white;">Thi thử</a> </div><br>
                                     <div class="noidung">
                                         <b>🛵 Thông tin cần thiết về bằng A1.</b>
                                         <hr>
